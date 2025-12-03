@@ -1,3 +1,2 @@
 # nextjs-dashboard
-Financial dashboard made with Next.js
-
+Financial dashboard developed using Next.js
