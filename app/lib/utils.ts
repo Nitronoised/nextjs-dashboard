@@ -67,3 +67,11 @@ export const generatePagination = (currentPage: number, totalPages: number) => {
     totalPages,
   ];
 };
+
+export const resolveCustomerImageUrl = (imageUrl: string) => {
+  if (imageUrl.startsWith('/customers/') && imageUrl.endsWith('.png')) {
+    return imageUrl.replace(/\.png$/, '.svg');
+  }
+
+  return imageUrl;
+};
